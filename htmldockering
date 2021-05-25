@@ -1,0 +1,12 @@
+FROM httpd
+LABEL "nome"="label"
+RUN apt-get update
+RUN mkdir -p /usr/local/apache2/htdocs/htmldocker/
+RUN mkdir -p /var/htmldocker/
+RUN chmod -R 777 /usr/local/apache2/htdocs/htmldocker/
+RUN chmod -R 777 /var/htmldocker/
+COPY ./ /usr/local/apache2/htdocs/htmldocker/
+RUN rm /usr/local/apache2/htdocs/htmldocker/Dockerfile
+WORKDIR /usr/local/apache2/htdocs/htmldocker/
+EXPOSE 80
+VOLUME /var/htmldocker

@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>DOCKERFILE</title>
+  </head>
+  <body>
+    <div>
+    <H1>Dockerfile</h1>
+      Arquivo:<b>Dockerfile</b>
+      <br>Para gerar uma imagem a aprtir de Dockerfile: docker build -t nome_imagem.
+      <br><I>Comandos Dockerfile:</i>
+        <br><b>FROM</b> - Chamada de imagem que será base para a construção da minha imagem <br>
+        <b>RUN</b> - Permitir a execução de comandos na montagem da imagem
+        <br><b>CMD X ENTRYPOINT</b> - Executam um determinado comando na inicialização do contêiner gerado a partir da imagem customizada por Dockerfile.
+        <br><b>COPY X ADD</b> - Permitem a cópia de 1 ou mais arquivos para uma pasta específica da imagem <br>
+        <b>ADD</b> - Serve pra copiar arquivos compactados (tar), desocmpactando na cópia
+        <br><b>EXPOSE</b> - Informa qual porta deverá ser liberada. <br>
+        <b>VOLUME</b> - Determinar o pontod e montagem para uma pasta que ficará disponível entre host e contêiner<br>
+        <b>WORKDIR</b> - Determina o diretório de trabalho. Na criação do contêiner a partir da imagem customizada, passa a ser o diretório padrão.
+        <br><b>USER</b> - Define o usuário que executa comandos.<br>
+        <b>LABEL</b> - Define o mantenedor da imagem<br>
+      </div>
